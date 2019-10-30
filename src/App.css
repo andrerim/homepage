@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FF7272;;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +19,71 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+
+#logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill-anim 0.5s ease forwards 3s;
+}
+
+#logo path{
+  stroke-dasharray: 800px; 
+  stroke-dashoffset: 800px; 
+  animation: line-anim 3s ease forwards 0.5s;
+}
+
+.header{
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: wheat;
+  top: 14%;
+  animation: show-anim 1s ease forwards 3s;
+  left: 0;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  border: 2px solid wheat;
+  padding: 20px;
+  animation: visibility-anim 1s ease forwards 3.5s;
+}
+
+@keyframes line-anim{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-anim {
+  from {
+      fill: transparent;
+  }
+  to {
+      fill: white;
+      width: 300px;
+      top: 8%;
+      left: 12%;
+      z-index: 99;
+  }
+}
+
+@keyframes show-anim  {
+  to {
+      height: 2px;
+  }
+}
+
+@keyframes visibility-anim {
+  to{
+    visibility: visible;
+  }
 }

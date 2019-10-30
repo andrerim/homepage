@@ -1,14 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #FF7272;;
-  min-height: 100vh;
+/* .App-header {
+  background-color: #FF7272;
+  height: 15vmin; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,11 +8,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+ */
 
-.App-link {
-  color: #09d3ac;
+
+.intro {
+  height: 100vh;
+  background-color: #FF7272;
+  color: white;
 }
-
 
 #logo{
   position: absolute;
@@ -36,25 +31,30 @@
   animation: line-anim 3s ease forwards 0.5s;
 }
 
-.header{
+.info{
+  text-align: center;
+  padding: 30px;
   position: absolute;
-  width: 100%;
-  height: 0;
-  background-color: wheat;
-  top: 14%;
-  animation: show-anim 1s ease forwards 3s;
-  left: 0;
+  visibility: hidden;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  border: 2px solid wheat;
+  animation: visibility-anim 1s ease forwards 3s;
 }
 
 .content{
-  position: absolute;
+  color: #FF7272;
+  background-color: white;
+  height: 100vh;
+ /*  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   visibility: hidden;
   border: 2px solid wheat;
   padding: 20px;
-  animation: visibility-anim 1s ease forwards 3.5s;
+  animation: visibility-anim 1s ease forwards 3.5s; */
 }
 
 @keyframes line-anim{
@@ -69,16 +69,8 @@
   }
   to {
       fill: white;
-      width: 300px;
-      top: 8%;
-      left: 12%;
-      z-index: 99;
-  }
-}
-
-@keyframes show-anim  {
-  to {
-      height: 2px;
+      top: 25%;
+      width: 600px;
   }
 }
 
@@ -86,4 +78,46 @@
   to{
     visibility: visible;
   }
+}
+
+
+.pointer {
+  position:absolute;
+  font-size: 5vh; 
+  text-decoration: none;
+  left: 50%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.south{
+  top: 93%;  
+  animation-name: bobbSouth;
+}
+
+@keyframes bobbSouth{
+  0%   {color:orange; top:90%;}
+25%  {color:yellow; top: 93%;}
+50%  {color:blue; top:90%;}
+75%  {color:green; top:93%;}
+100% {color:red; top:90%;}
+}
+
+.heading{
+  text-align: center;
+}
+
+.contact {
+  height: 20vh;
+  background-color: pink;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.contact > a {
+  padding: 10px;
+}
+
+#linkedin {
+  width: 32px;
 }

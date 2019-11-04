@@ -41,12 +41,13 @@
   transform: translate(-50%, -60%);
   border: 2px solid wheat;
   animation: visibility-anim 1s ease forwards 3s;
+  width:600px;  
 }
 
 .content{
   color: #FF7272;
   background-color: white;
-  height: 100vh;
+  height: 100%;
  /*  position: absolute;
   top: 50%;
   left: 50%;
@@ -108,11 +109,17 @@
 }
 
 .contact {
-  height: 20vh;
-  background-color: pink;
+  height: 10vh;
+  background-color: white;
+  /* background-color: #FF7272; */
   text-align: center;
   padding-top: 10px;
 }
+
+.projects{
+  
+}
+
 
 .contact > a {
   padding: 10px;

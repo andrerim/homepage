@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import github from './assets/GitHub-Mark/PNG/GitHub-Mark-32px.png'
-import linkedin from './assets/LinkedIn-Logos/LI-Black.png'
+import Project from './components/Projects';
+import github from './assets/GitHub-Mark/PNG/GitHub-Mark-32px.png';
+import linkedin from './assets/LinkedIn-Logos/LI-Black.png';
 
 function App() {
   return (
@@ -38,19 +39,22 @@ function App() {
               <h1>Pursuing a B.Sc. in Informatics <br></br>@<br></br> NTNU</h1>
             </div>
             </div>
-            <a class="pointer south" href="#art">V</a>
-      <div className="content">
+     {/*        <a class="pointer south" href="#content">V</a>
+      <div id="content" className="content">
         <div className="heading">
           <h1>Projects</h1>
-          <p>Not much to see here</p>
         </div>
-      </div>
+          <div className="projects">
+            <Project></Project>
+            <Project></Project>
+            <Project></Project>
+            <Project></Project>
+            <Project></Project>
+          </div>
+      </div> */}
       <div className="contact">
-        <img src={github} alt="Github"></img>
-        <img id="linkedin" src={linkedin} alt="Linkedin"></img>
-        <a>Linkedin</a>
-        <a>Github</a>
-        <a>Email</a>
+        <a href="https://www.linkedin.com/in/andrerim/"><img src={github} alt="Github"></img></a>
+        <a href="https://github.com/andrerim"><img id="linkedin" src={linkedin} alt="Linkedin"></img></a>
       </div>
     </div>
   );

@@ -39,19 +39,19 @@ function App() {
               <h1>Pursuing a B.Sc. in Informatics <br></br>@<br></br> NTNU</h1>
             </div>
             </div>
-     {/*        <a class="pointer south" href="#content">V</a>
+             <a class="pointer south" href="#content">V</a>
       <div id="content" className="content">
         <div className="heading">
-          <h1>Projects</h1>
+          <h1>Portofolio</h1>
         </div>
           <div className="projects">
             <Project></Project>
+        {/*     <Project></Project>
             <Project></Project>
             <Project></Project>
-            <Project></Project>
-            <Project></Project>
+            <Project></Project> */}
           </div>
-      </div> */}
+      </div> 
       <div className="contact">
         <a href="https://www.linkedin.com/in/andrerim/"><img src={github} alt="Github"></img></a>
         <a href="https://github.com/andrerim"><img id="linkedin" src={linkedin} alt="Linkedin"></img></a>

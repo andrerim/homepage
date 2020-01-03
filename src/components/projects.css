@@ -1,3 +1,4 @@
+/*
 .project {
   margin-top: 20px;
   padding: 10px 20px;
@@ -6,12 +7,28 @@
   height: 25vh;
 }
 
-.project:nth-child(even) {
+
+ .project:nth-child(even) {
+
   position: relative;
   left: 40%;
 }
 
 .project:nth-last-child(1){
-
     margin-bottom: 20px;
+} */
+
+
+.project {
+  padding: 10px 20px;
+  border: 2px solid #ff7272;
+  display: inline-block;
+  position: relative;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#repLink {
+  font-size: 1
 }

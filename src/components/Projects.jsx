@@ -1,13 +1,23 @@
-import React from 'react';
-import './projects.css'
+import React from "react";
+import "./projects.css";
 
-const Project = () => {
-    return (
-        <div className="project">
-            <h1><a href="https://andrerim.github.io/snake/">Snake</a></h1>
-            <p>This is your basic game of snake. Try it <a href="https://andrerim.github.io/snake/">out!</a> <a id="repLink" href="https://github.com/andrerim/snake/">Repository</a></p>
-        </div>
-    )
-}
+const Project = props => {
+  return (
+    <div className="project">
+      <a href={props.projectLink}><img className="projectimg" src={props.projectimg}  width="400px" alt="project screenshot"></img></a>
+      <div className="projectinfo">
+        <h1>
+          <a href={props.projectLink}>{props.projectName}</a>
+        </h1>
+        <p>
+          {props.projectSummary + " "} 
+          <a id="repLink" href={props.projectRep}>
+            Repository
+          </a>
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default Project;

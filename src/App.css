@@ -109,18 +109,25 @@
   padding: 10px;
 }
 
+
+
+.projects{
+  padding:  20px 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact {
-  height: 10vh;
-  background-color: white;
+  /* height: 10vh; */
+
   /* background-color: #FF7272; */
   text-align: center;
   padding-top: 10px;
 }
-
-.projects{
-  height: 25vh;
-}
-
 
 .contact > a {
   padding: 10px;

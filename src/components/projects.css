@@ -33,10 +33,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center; 
   font-size: 150%;
 }
 
+.projectinfo > h1{
+  
+  /* text-align: center; */
+
+}
+
+.demolink{
+  
+}
 .projectimg {
   opacity: 1;
   display: block;
@@ -46,7 +54,7 @@
 }
 
 .project:hover .projectimg{
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .project:hover .projectinfo{

@@ -7,7 +7,7 @@ const Project = props => {
       <a href={props.projectLink}><img className="projectimg" src={props.projectimg}  width="400px" alt="project screenshot"></img></a>
       <div className="projectinfo">
         <h1>
-          <a href={props.projectLink}>{props.projectName}</a>
+          <a className="demoLink"href={props.projectLink}>{props.projectName}</a>
         </h1>
         <p>
           {props.projectSummary + " "} 

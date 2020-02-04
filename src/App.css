@@ -15,9 +15,12 @@
   height: 100vh;
   background-color: #FF7272;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#logo{
+#myName{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,7 +28,7 @@
   animation: fill-anim 0.5s ease forwards 3s;
 }
 
-#logo path{
+#myName path{
   stroke-dasharray: 800px; 
   stroke-dashoffset: 800px; 
   animation: line-anim 3s ease forwards 0.5s;
@@ -34,19 +37,15 @@
 .info{
   text-align: center;
   padding: 30px;
-  position: absolute;
   visibility: hidden;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -60%);
   border: 2px solid wheat;
   animation: visibility-anim 1s ease forwards 3s;
   width:600px;  
 }
 
 .content{
-  color: #FF7272;
-  background-color: white;
+/*   color: #FF7272;
+ */  background-color: white;
   height: 100%;
  /*  position: absolute;
   top: 50%;
@@ -81,7 +80,9 @@
   }
 }
 
-
+a {
+  color: #ff7272;
+}
 .pointer {
   position:absolute;
   font-size: 5vh; 
@@ -89,6 +90,7 @@
   left: 50%;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  color: wheat;
 }
 
 .south{
@@ -97,11 +99,11 @@
 }
 
 @keyframes bobbSouth{
-  0%   {color:orange; top:90%;}
-25%  {color:yellow; top: 93%;}
-50%  {color:blue; top:90%;}
-75%  {color:green; top:93%;}
-100% {color:red; top:90%;}
+  0%   {top:90%;}
+25%  {top: 93%;}
+50%  {top:90%;}
+75%  {top:93%;}
+100% {top:90%;}
 }
 
 .heading{
@@ -113,7 +115,7 @@
 
 .projects{
   padding:  20px 0;
-  height: 100%;
+  /* height: 100%; */
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 10px;
@@ -123,15 +125,15 @@
 }
 
 .contact {
-  /* height: 10vh; */
-
-  /* background-color: #FF7272; */
-  text-align: center;
-  padding-top: 10px;
+  height: 10vh;
+  background-color: #FF7272; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact > a {
-  padding: 10px;
+  padding: 10px; 
 }
 
 #linkedin {

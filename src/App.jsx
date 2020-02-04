@@ -6,13 +6,14 @@ import linkedin from "./assets/LinkedIn-Logos/LI-Black.png";
 
 import scsnake from "./assets/screenshots/screenshot_snake.PNG";
 import scspise from "./assets/screenshots/screenshot_spisested_adviser.PNG";
+import scsort from "./assets/screenshots/sorting_visualization.PNG";
 
 function App() {
   return (
     <div className="App">
       <div className="intro">
         <svg
-          id="logo"
+          id="myName"
           width="920"
           height="311"
           viewBox="0 0 920 311"
@@ -148,6 +149,13 @@ function App() {
             projectimg={scsnake}
             projectLink="https://andrerim.github.io/snake/"
             projectRep="https://github.com/andrerim/snake/"
+          ></Project>
+          <Project
+            projectName="Sorting visualization"
+            projectSummary="A visualisation of the bubble sort algorithm. Made with canvas."
+            projectimg={scsort}
+            projectLink="https://andrerim.github.io/sortvisualization/"
+            projectRep="https://github.com/andrerim/sortvisualization"
           ></Project>
         </div>
       </div>

@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.fadadbc4.chunk.css",
-    "main.js": "/homepage/static/js/main.4e1b5cb4.chunk.js",
-    "main.js.map": "/homepage/static/js/main.4e1b5cb4.chunk.js.map",
+    "main.css": "/homepage/static/css/main.d92e91f8.chunk.css",
+    "main.js": "/homepage/static/js/main.8c0a4bfc.chunk.js",
+    "main.js.map": "/homepage/static/js/main.8c0a4bfc.chunk.js.map",
     "runtime-main.js": "/homepage/static/js/runtime-main.5183e44b.js",
     "runtime-main.js.map": "/homepage/static/js/runtime-main.5183e44b.js.map",
-    "static/js/2.114ea554.chunk.js": "/homepage/static/js/2.114ea554.chunk.js",
-    "static/js/2.114ea554.chunk.js.map": "/homepage/static/js/2.114ea554.chunk.js.map",
+    "static/js/2.a7b1501a.chunk.js": "/homepage/static/js/2.a7b1501a.chunk.js",
+    "static/js/2.a7b1501a.chunk.js.map": "/homepage/static/js/2.a7b1501a.chunk.js.map",
     "index.html": "/homepage/index.html",
-    "precache-manifest.9c65b5d08b203f7f241a89fd3b43f390.js": "/homepage/precache-manifest.9c65b5d08b203f7f241a89fd3b43f390.js",
+    "precache-manifest.e06ac48b9d4872fe8a19e0e913d41b73.js": "/homepage/precache-manifest.e06ac48b9d4872fe8a19e0e913d41b73.js",
     "service-worker.js": "/homepage/service-worker.js",
-    "static/css/main.fadadbc4.chunk.css.map": "/homepage/static/css/main.fadadbc4.chunk.css.map",
+    "static/css/main.d92e91f8.chunk.css.map": "/homepage/static/css/main.d92e91f8.chunk.css.map",
     "static/media/screenshot_snake.PNG": "/homepage/static/media/screenshot_snake.d752df5a.PNG",
-    "static/media/screenshot_spisested_adviser.PNG": "/homepage/static/media/screenshot_spisested_adviser.27a1b74f.PNG"
+    "static/media/screenshot_spisested_adviser.PNG": "/homepage/static/media/screenshot_spisested_adviser.27a1b74f.PNG",
+    "static/media/sorting_visualization.PNG": "/homepage/static/media/sorting_visualization.d7ef116c.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.5183e44b.js",
-    "static/js/2.114ea554.chunk.js",
-    "static/css/main.fadadbc4.chunk.css",
-    "static/js/main.4e1b5cb4.chunk.js"
+    "static/js/2.a7b1501a.chunk.js",
+    "static/css/main.d92e91f8.chunk.css",
+    "static/js/main.8c0a4bfc.chunk.js"
   ]
 }

@@ -7,7 +7,7 @@ import linkedin from "./assets/LinkedIn-Logos/LI-Black.png";
 import scsnake from "./assets/screenshots/screenshot_snake.PNG";
 import scspise from "./assets/screenshots/screenshot_spisested_adviser.PNG";
 import scsort from "./assets/screenshots/sorting_visualization.PNG";
-
+import scstock from "./assets/screenshots/screenshot_stock_scraper.PNG";
 function App() {
   return (
     <div className="App">
@@ -142,6 +142,13 @@ function App() {
             projectimg={scspise}
             projectLink="https://harkamalsi.github.io/spisested-advisor/"
             projectRep="https://github.com/harkamalsi/spisested-advisor"
+          ></Project>
+           <Project
+            projectName="Stock scraper"
+            projectSummary="Scraping stock data from Oslo stock exchange, and displaying it using dash."
+            projectimg={scstock}
+            projectLink="https://github.com/andrerim/web-scraping-stocks"
+            projectRep="https://github.com/andrerim/web-scraping-stocks"
           ></Project>
           <Project
             projectName="Snake"

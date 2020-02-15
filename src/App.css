@@ -1,81 +1,73 @@
-/* .App-header {
-  background-color: #FF7272;
-  height: 15vmin; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
- */
-
-
 .intro {
-  height: 100vh;
-  background-color: #FF7272;
+  height: 90vh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
-#myName{
+.intro:after {
+  background-color: #FF7272;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+#myName {
   animation: fill-anim 0.5s ease forwards 3s;
 }
 
-#myName path{
-  stroke-dasharray: 800px; 
-  stroke-dashoffset: 800px; 
+#myName path {
+  stroke-dasharray: 800px;
+  stroke-dashoffset: 800px;
   animation: line-anim 3s ease forwards 0.5s;
 }
 
-.info{
+.info {
   text-align: center;
   padding: 30px;
   visibility: hidden;
   border: 2px solid wheat;
   animation: visibility-anim 1s ease forwards 3s;
-  width:600px;  
+  width: 600px;
 }
 
-.content{
-/*   color: #FF7272;
- */  background-color: white;
+.content {
+  background-color: white;
   height: 100%;
- /*  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   visibility: hidden;
-  border: 2px solid wheat;
-  padding: 20px;
-  animation: visibility-anim 1s ease forwards 3.5s; */
+  padding-bottom: 20px;
+  animation: visibility-anim 1s ease forwards 3.5s;
 }
 
-@keyframes line-anim{
-  to{
-      stroke-dashoffset: 0;
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
 @keyframes fill-anim {
   from {
-      fill: transparent;
+    fill: transparent;
   }
   to {
-      fill: white;
-      top: 25%;
-      width: 600px;
+    fill: white;
+    top: 25%;
+    width: 600px;
   }
 }
 
 @keyframes visibility-anim {
-  to{
+  to {
     visibility: visible;
   }
 }
@@ -83,38 +75,15 @@
 a {
   color: #ff7272;
 }
-.pointer {
-  position:absolute;
-  font-size: 5vh; 
-  text-decoration: none;
-  left: 50%;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  color: wheat;
-}
 
-.south{
-  top: 93%;  
-  animation-name: bobbSouth;
-}
-
-@keyframes bobbSouth{
-  0%   {top:90%;}
-25%  {top: 93%;}
-50%  {top:90%;}
-75%  {top:93%;}
-100% {top:90%;}
-}
-
-.heading{
+.heading {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  color: #FF7272;
 }
 
-
-
-.projects{
-  padding:  20px 0;
+.projects {
+  padding: 20px 0;
   /* height: 100%; */
   display: grid;
   grid-template-columns: auto auto;
@@ -125,15 +94,27 @@ a {
 }
 
 .contact {
-  height: 10vh;
-  background-color: #FF7272; 
+  height: 15vh;
+  background-color: #FF7272;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.contact > a {
-  padding: 10px; 
+.contact>h1{
+  padding: 30px 0;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.contact>a {
+  padding: 10px;
 }
 
 #linkedin {

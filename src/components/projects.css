@@ -18,14 +18,12 @@
     margin-bottom: 20px;
 } */
 
-
 .project {
   border: 2px solid #ff7272;
   position: relative;
 }
 
-
-.projectinfo{
+.projectinfo {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -36,15 +34,6 @@
   font-size: 150%;
 }
 
-.projectinfo > h1{
-  
-  /* text-align: center; */
-
-}
-
-.demolink{
-  
-}
 .projectimg {
   opacity: 1;
   display: block;
@@ -53,11 +42,10 @@
   backface-visibility: hidden;
 }
 
-.project:hover .projectimg{
+.project:hover .projectimg {
   opacity: 0.2;
 }
 
-.project:hover .projectinfo{
+.project:hover .projectinfo {
   opacity: 1;
 }
-

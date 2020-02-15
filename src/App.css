@@ -84,7 +84,6 @@ a {
 
 .projects {
   padding: 20px 0;
-  /* height: 100%; */
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 10px;

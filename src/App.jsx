@@ -168,10 +168,10 @@ function App() {
       <div className="contact">
         <h1>Contact</h1>
         <div className="links">
-          <a href="https://www.linkedin.com/in/andrerim/">
+          <a href="https://github.com/andrerim">
             <img src={github} alt="Github"></img>
           </a>
-          <a href="https://github.com/andrerim">
+          <a href="https://www.linkedin.com/in/andrerim/">
             <img id="linkedin" src={linkedin} alt="Linkedin"></img>
           </a>
         </div>
